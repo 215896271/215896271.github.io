@@ -1,459 +1,520 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>小汤的个人博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Tom">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
 <meta property="og:title" content="小汤的个人博客">
 <meta property="og:url" content="https://215896271.github.io/index.html">
 <meta property="og:site_name" content="小汤的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Tom">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="小汤的个人博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
+<meta name="twitter:card" content="summary_large_image">
   
   
   
-<link rel="stylesheet" href="/css/style.css">
+  <title>小汤的个人博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"215896271.github.io","root":"/","version":"1.9.8","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
-
 <meta name="generator" content="Hexo 7.3.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">小汤的个人博客</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小汤的个人博客</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://215896271.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-爱与象征界的故事" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/04/07/%E7%88%B1%E4%B8%8E%E8%B1%A1%E5%BE%81%E7%95%8C%E7%9A%84%E6%95%85%E4%BA%8B/" class="article-date">
-  <time class="dt-published" datetime="2025-04-06T16:00:00.000Z" itemprop="datePublished">2025-04-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/04/07/%E7%88%B1%E4%B8%8E%E8%B1%A1%E5%BE%81%E7%95%8C%E7%9A%84%E6%95%85%E4%BA%8B/">爱与象征界的故事</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="序章-现实的微光"><a href="#序章-现实的微光" class="headerlink" title="序章  现实的微光"></a>序章  现实的微光</h2><p>夜色静谧，窗外的路灯在窗帘上投下细碎的光晕。小黄蜷缩在床头，手中的小说滑落在被单上，呼吸渐渐平稳。一旁的书桌上，小王的笔记本电脑泛着微光，他仍专注地盯着屏幕，指尖偶尔敲击键盘，处理着未完成的数据。</p>
-<p>他们相识已有七年，从高中同桌到如今同住一个公寓。书架上，小黄的猫猫挂件和小王的专利证书并排放着。</p>
-<p>小王揉了揉酸涩的眼睛，抬头时发现小黄已经睡着了。她的睫毛在台灯的光晕下投下浅浅的阴影，嘴角微微放松，像是终于从白日的思绪中抽离。他轻手轻脚地走过去，拾起滑落的书本，又拉过羽绒被，小心翼翼地盖在她单薄的肩膀上。</p>
-<p>就在这一瞬，有什么东西在寻常生活的表层之下轻轻震颤。</p>
-<p>恍惚间，一个更古老、更深邃的存在注意到了他们——那是象征界的故事，一个潜藏在现实之下的世界，由纯粹的情感和记忆编织而成。</p>
-<p>而当象征界注意到他们的时候，他们也注意到了象征界。</p>
-<p>于是，故事就开始了。</p>
-<h2 id="第1章-爱的萌芽"><a href="#第1章-爱的萌芽" class="headerlink" title="第1章  爱的萌芽"></a>第1章  爱的萌芽</h2><p>故事发生在一个名为鹿角部落的母系氏族社会部落里。</p>
-<p>鹿角部落的女孩们总在日出时结伴采浆果，男孩们则带着长矛走向森林。傍晚归来时，女孩的藤篮里装满紫红的果实，男孩肩上挂着猎物——这是再平常不过的日子。</p>
-<p>但总有些例外。</p>
-<p>溪水潺潺流过圆润的鹅卵石，阳光透过树冠的缝隙，在湿润的河滩上投下斑驳的光影。小王蹲在这片光斑里，手指在泥地上勾勒着奇怪的符号。远处传来此起彼伏的吆喝声——部落的男孩们正在练习投掷长矛，木制武器破空的呼啸与击中目标的闷响交织在一起。</p>
-<p>小王的手指顿了顿，一滴汗珠顺着他的鼻尖落在刚画好的符号上。他抬头望向声源处，又低头看了看自己沾满泥巴的手指，轻轻叹了口气，继续在泥地上画起新的图案。</p>
-<p>“你又在画这些奇怪的记号了。”一个清脆的声音从背后传来。</p>
-<p>小王回头，看见小黄抱着一篮新鲜的浆果站在他身后。她赤着脚，脚踝上沾着泥土和草叶，阳光在她的发梢跳跃。</p>
-<p>“这不是奇怪的记号，”小王指着泥地上的符号解释道，声音比平时快了几分，”这是数字。我用它们来记录我们储存了多少食物，这样冬天就不会挨饿了。”</p>
-<p>小黄歪着头看了一会儿，然后蹲下身来，把浆果篮放在一旁。”教我。”她说，眼睛里闪烁着好奇的光芒。</p>
-<p>小王愣住了。他下意识地看向部落中央的大茅屋——族母平时在那里用绳结记录事情。没有人会责怪一个男孩观察星辰，但主动传授知识又是另一回事。</p>
-<p>他小心翼翼地指着第一个符号：”这是一，代表一个东西…”说着，他用树枝在旁边画了一道竖线。</p>
-<p>小黄立刻学着他的样子，在泥地上划出歪歪扭扭的线条。小王看着她笨拙却认真的动作，嘴角不自觉地上扬。他伸手轻轻握住她的手腕：”要这样用力…”</p>
-<p>就这样，他们在溪边度过了一个下午。小王教她画符号，小黄则把浆果按数量排列在对应的数字旁。当夕阳将溪水染成金色时，小黄已经能独自写出前十个数了。</p>
-<p>“明天还来吗？”小王问道，试图掩饰声音里的期待。</p>
-<p>小黄点点头，嘴角微微上扬：”如果你愿意教我更多的话。”她转身离开，脚步轻快地穿过灌木丛，消失在暮色中。</p>
-<p>小王望着她离去的背影，感到胸口有一种奇怪的温暖。他低头看着泥地上两人并排蹲坐留下的痕迹，小心地用脚抹平了那些数字符号。</p>
-<p>雨季来临前的最后一次集体狩猎中，小王的表现再次让部落里的长辈们摇头叹息。当其他年轻男子追逐着一头受伤的野猪时，小王却站在一旁，观察着天空中盘旋的飞鸟。</p>
-<p>“看它们的飞行轨迹，”他自言自语，”它们在告诉我们暴风雨要来了。”</p>
-<p>族母——部落里最年长的女性，掌管祭祀和医药的老妇人——听到了他的话。她眯起浑浊的眼睛望向天空，然后敲响了腰间的骨铃，宣布狩猎提前结束。</p>
-<p>当晚，暴雨如期而至。族人们挤在最大的茅屋里分享食物，小王被允许坐在族母身边——这是一种难得的荣誉。</p>
-<p>“小王，”族母用沙哑的声音问道，”你是怎么知道暴风雨要来的？”</p>
-<p>小王紧张地搓着手指：”我注意到鸟飞得比平时低，而且它们聚在一起往同一个方向飞。还有…蚂蚁也在搬家，树上的蜘蛛收起了网。”</p>
-<p>族母点点头，皱纹里藏着深思：”你有一双不一样的眼睛。”她的目光扫过屋内，”但记住，观察自然只是祭司工作的一部分。真正的智慧在于理解人与神灵之间的联系。”</p>
-<p>小王低下头，感到一阵失落。他知道自己永远不可能成为祭司——那是女性的特权。他能做的只是观察、记录，然后…然后什么？他抬起头，无意间对上了坐在角落的小黄的目光。她对他微微一笑，那笑容像一缕阳光穿透了他心中的阴霾。</p>
-<p>小黄十六岁那年，按照部落习俗，她拥有了自己的小茅屋——这意味着她可以开始邀请心仪的男孩过夜了。部落里的几个年轻猎人都曾在她门前留下礼物：漂亮的羽毛、闪亮的石头、或是精心制作的骨饰。</p>
-<p>但她总是婉拒他们的拜访，直到那个满月之夜。</p>
-<p>小王站在她门前，手里捧着一块平整的树皮，上面刻满了奇怪的符号。”这是送给你的，”他轻声说，”我把我这些年发现的所有数字规律都记在上面了。”</p>
-<p>小黄接过树皮，指尖轻轻抚过那些凹痕。月光下，她能看到小王眼中的期待和不安。她侧身让出一条路：”进来吧。”</p>
-<p>茅屋里，火光摇曳。小黄煮了一壶草药茶，两人并肩坐在兽皮铺就的床上。小王紧张地讲述着他最近发现的星辰运行规律，而小黄则安静地听着，偶尔提出一个问题。</p>
-<p>“你知道吗，”小黄突然说，”小时候我就觉得你很特别。当其他男孩都在比赛谁扔的矛更远时，你却在数溪流里的石头。”</p>
-<p>小王的脸红了：”我以为没人注意到。”</p>
-<p>“我注意到了。”小黄的声音轻柔却坚定。她伸出手，轻轻碰了碰小王的脸颊，”我一直都注意着你。”</p>
-<p>那一刻，仿佛有什么东西在两人之间悄然改变。小王慢慢靠近，额头抵着小黄的额头。他们的呼吸交织在一起，心跳声在安静的茅屋里清晰可闻。</p>
-<p>“我可以…留下来吗？”小王问道，声音里带着前所未有的勇气。</p>
-<p>小黄没有回答，只是轻轻吹灭了油灯。</p>
-<h2 id="第2章-象征界的乐章"><a href="#第2章-象征界的乐章" class="headerlink" title="第2章 象征界的乐章"></a>第2章 象征界的乐章</h2><p>先祖祭拜活动是部落一年中最重要的仪式。全族人聚集在神圣的洞穴前，点燃篝火，献上祭品，祈求祖先的庇佑。</p>
-<p>今年的仪式由族母主持，小王被允许站在祭司圈子的最外围——这是对他特殊天赋的认可。小黄则和其他年轻女性一起，手持火把围成一个大圈。</p>
-<p>当族母开始吟唱古老的咒语时，小王感到一阵奇异的能量在空气中流动。他眼前突然浮现出奇怪的景象——岩石的纹路化作流动的河流，火把的火焰凝结成静止的星辰。小黄惊讶地看向他——他的瞳孔正倒映着不属于这个世界的画面。</p>
-<p>突然，洞穴入口处的岩石开始发出微弱的蓝光。族母停止了吟唱，震惊地看着小王：”你…你看到了象征界？”</p>
-<p>小王自己也感到困惑：”我不知道…但这些景象就这样出现在我眼前。”</p>
-<p>就在这时，蓝光骤然增强，形成一个漩涡状的入口。小王感到一股不可抗拒的力量在拉扯他。他下意识地伸出手，小黄毫不犹豫地抓住了它。</p>
-<p>“抓紧我！”小王喊道，但声音被一阵突如其来的风声淹没。他们感到双脚离地，被吸入那个发光的漩涡中。</p>
-<p>最后一刻，小王看到族母惊恐的表情和族人们伸出的、却够不着他们的手。然后，世界翻转了。</p>
-<p>当小王和小黄再次睁开眼睛时，他们发现自己漂浮在一个奇异的空间里。周围仍然是部落的景象——树木、溪流、茅屋——但一切都笼罩在柔和的蓝光中，而且失去了实体。他们可以穿过树干，踩在水面上而不下沉。</p>
-<p>“这是哪里？”小黄问道，声音在空旷的空间里产生奇妙的回声。</p>
-<p>小王环顾四周，眼中闪烁着理解的光芒：”我想…我们进入了世界的另一面。族母曾经说过，现实世界之外还有一个象征着思想和灵魂的世界。”</p>
-<p>他们很快发现，在这个被小王称为”象征界”的地方，他们的感官变得异常敏锐。每一次触碰都带来成倍放大的感受，每一个想法都能被对方清晰地感知到。</p>
-<p>小黄捧起小王的脸，嘴角泛起会意的微笑：”在这里，我能直接感受到你的情感…就像它们是我自己的一样。”她的眼睛映照着周围流动的蓝光，”原来你一直都是这样看我的…”</p>
-<p>小王轻轻抵住她的额头：”而我现在能感受到你的每一分喜悦和期待。这太…太…”</p>
-<p>“太美妙了。”小黄完成了他想说的话。在这个没有重量、没有隔阂的世界里，他们第一次真正地、完全地理解了彼此。</p>
-<p>在象征界的永恒微光中，他们体悟到了生命最本真的流动。每一次触碰都如同初次相遇般纯粹，每一次相拥都带来全新的共鸣。</p>
-<p>在这里，结合不再是夜晚的秘密，而是如同呼吸般自然的存在。一切都同晨露般纯净透明，他们用原始的方式诉说爱意——小黄的双腿会本能地缠住小王的腰际，像藤蔓依附着古树；小王的手掌总是先轻抚过小黄的发梢，再带着怜惜的力度将她拥入怀中。当小黄因极致的欢愉而颤抖时，小王会用唇舌拭去她脖颈的汗珠；当小王因忘情而失控时，小黄会以温柔的抚摸将他带回爱的港湾。</p>
-<p>他们像两股交织的风，在象征界的每个角落留下痕迹：</p>
-<p>在千年古树的枝桠间，枝叶随着他们的呼吸起伏</p>
-<p>在瀑布下的深潭里，水珠悬浮成发光的星座</p>
-<p>在废弃的陶窑中，尘土因他们的温度而重新变得柔软</p>
-<p>每一次结合都不仅仅是身体的交融，更像是灵魂的重新拼合。小黄能感觉到小王的每一次心跳都在她体内回响，小王则发现小黄的每一声叹息都在他唇边具现成形。他们的边界开始模糊——有时小黄抬起手，会看到指尖流转着小王特有的星光；小王低头时，会发现自己的倒影里映着小黄惯有的微笑。</p>
-<p>最奇妙的是，象征界似乎随着他们的情感而变化：</p>
-<p>当他们安静相拥时，四周会浮现出他们童年玩耍的溪岸</p>
-<p>当激情如火时，空气中便绽放出从未见过的奇异花朵</p>
-<p>在达到极乐的那一刻，整个空间会短暂地化作纯粹的金色光芒</p>
-<p>他们像两滴融合的水珠，在这个映照万物本质的象征界里，既找到了彼此，也遇见了最真实的自己。</p>
-<p>与此同时，在现实世界的部落里，族人们开始注意到一些奇异的景象。每当晨雾升起时，溪边的岩石上会浮现出小王和小黄相拥的轮廓；当夕阳西下，篝火的烟雾中会显现出他们交缠的身影。这些影像并非实体，却真实得让人屏息。</p>
-<p>“简直不知羞耻！”老妪阿桑用骨杖重重敲击地面，却忍不住多看了几眼溪水中倒映的缠绵身影。</p>
-<p>年轻的猎人们则三五成群地窃窃私语。”他们从早到晚都在…”阿树比划着手势，惹得同伴们哄笑起来，但笑声中分明带着几分向往。</p>
-<p>唯有孩子们最是坦然。”看！小黄姐姐在亲小王哥哥！”小女孩阿朵指着树梢上转瞬即逝的光影，天真地问道：”他们是不是很开心？”</p>
-<p>族母起初忧心忡忡。她整日守在祭祀台前，手中的骨铃叮当作响。”这两个孩子太不知分寸了…”但每当夜深人静时，她总会不自觉地走到能看到那些幻影的地方。</p>
-<p>某个满月之夜，族母看见最动人的一幕：小王小心翼翼地捧着小黄的脸，眼神中的珍视连石头都能融化；小黄则轻轻抚过小王手臂上的伤疤，那是他小时候为保护她不被野猪伤到而留下的。他们相拥的样子，就像两棵幼苗在风雨中相互依偎。</p>
-<p>族母有些怔住了，一些久远的记忆浮现在心头，她想起了古老的传说——回归原初之海。也许，当两个灵魂的结合足够纯粹时，他们就会暂时消解个体边界，回归原初之海。也许这正是他们在象征界经历的，那是一个独属于他们的爱的仪式。</p>
-<p>此时，在象征界的瀑布之下，小王与小黄再次相拥在水中，他的指尖在她腰间微微发颤。突然，一阵钝痛从灵魂深处翻涌——在奔腾的水流面前，他感受到了自身的渺小。”我什么都改变不了…”他的声音闷在小黄颈窝里，带着湿漉漉的哽咽，”族母说，我成不了祭司。”他的手指徒然划过透明的水流，”若有一天病痛找上你，若岁月将你带走…”此刻的他像个孩子，将自己完全交付给小黄的怀抱。</p>
-<p>小黄的指尖轻轻梳过小王的发丝，她的声音像穿过林间的微风：”有你在身边，已是最大的满足，我不再奢求更多。”她带着他缓缓躺下，从身后环抱住他，唇瓣贴近他的耳际，哼起一支轻快的歌谣。那旋律讲述着山风如何抚过树梢，星辰怎样点亮夜空，还有她心中对他绵长的爱意。</p>
-<p>山涧的水流渐渐变得平缓，如同小溪般潺潺流淌。象征界的夜空升起明月，为万物披上银辉。在这静谧中，小王的心渐渐沉静。他转过身，目光如水般澄澈，静静地望着小黄。</p>
-<p>“谢谢你。”他轻声道。这感谢不仅给予怀中的爱人，也献给滋养他们的天地。此刻，他放下所有执念，只愿珍存眼前的温柔。他的拥抱变得更加轻柔，动作愈发和缓，将小黄小心地拥入怀中。</p>
-<p>他们疼爱着彼此，如同在林间奔跑，如同在水间嬉戏，挥洒着最纯净的汗水，收获着最本真的喜悦。当快乐来临时，他们任由爱意在身体间自然流淌；当激情退去，又回归到湖水般的平静。</p>
-<p>时光在象征界的微光中静静流淌，他们的爱恋逐渐沉淀为更深沉的联结。某个清晨，小黄注视着小王的眼睛，温柔地说：”也许，我们该回归平常了。“</p>
-<p>于是，分离开始了，分离的过程缓慢而深刻，先是交合处慢慢分开，带着细微战栗，如同从温暖巢穴中被轻柔推出；接着是每一寸紧密相贴的肌肤依依不舍地告别，最后，他们的掌心仍固执地交握着，指尖在对方皮肤上流连，仿佛这样就能延缓分离的必然。</p>
-<p>当最后一点指尖的连结也被空气隔断时，一种奇异的清明席卷而来。小王低头看着自己湿润的性器，上面仍透发着属于小黄的气味；小黄抚摸自己仍红润着的胸口，那里还残留着小王的印记。他们不约而同地深吸一口气，发现呼吸间都是对方的气息。</p>
-<p>两人拾起兽皮衣物，试探性地活动四肢，感受到了一种崭新的体验。他们重新回到了各自的生活，就像原来在部落里的日子一样。白天他们各自劳作，晚上一起分享彼此的生活。</p>
-<p>在这样平静的日子里，生活的点滴都闪烁着温柔的光芒——晨起时分享着新鲜的浆果，夜深时为对方掖好被角。</p>
-<p>一种崭新的爱意如春藤般悄然生长，既保持着各自的舒展，又在根系深处紧密相连。他们如同知心的挚友，在各自舒展生命的同时，也分享着每一份简单的喜悦。</p>
-<h2 id="第3章-当象征照进现实"><a href="#第3章-当象征照进现实" class="headerlink" title="第3章  当象征照进现实"></a>第3章  当象征照进现实</h2><p>当小王和小黄重新出现在部落中时，整个鹿角部落都为之震动。族人们放下手中的活计，三三两两地聚在一起窃窃私语。老妪阿桑的骨杖在地上敲出急促的节奏，年轻猎人们交换着意味深长的眼神，就连孩子们也停止了嬉戏，好奇地打量着这对”从光影里归来的人”。</p>
-<p>族母是第一个迎上前去的。她布满皱纹的手同时握住两人的手腕，感受着脉搏的跳动。”活着就好，”她沙哑的声音里带着久违的温柔，”活着就好。”</p>
-<p>日子如溪水般流淌，最初的新鲜感渐渐沉淀。女人们不再在小黄经过时突然压低声音，猎人们也不再追问小王象征界的奇闻。小王虽然没能成为祭司，但他也得到了族母的认可，成为了传授知识的特殊人员；小黄平时依旧与女伴们采集果实，编织藤篮，闲暇时便来到小王身旁，帮他整理记录数字用的树皮，或是将复杂的星图编制为易懂的图案。</p>
-<p>有时在夜深人静时，他们会不约而同地望向同一个方向——那里，象征界的光芒若隐若现，如同呼吸般明灭。它穿透时间和空间的帷幕，将它的力量投射到更远处。</p>
-<p>晨光透过窗帘的缝隙洒落，小黄在朦胧中醒来。她眨了眨眼，发现自己仍躺在床上，羽绒被好好地盖在身上。一旁，小王正坐在床边，静静地看着她，眼神里带着某种她从未见过的柔和。</p>
-<p>她怔了怔，梦境与现实在脑海中交织——溪边的数字符号、瀑布下的相拥、象征界的蓝光……一切清晰得不像幻觉。</p>
-<p>“你做梦了吗？”小王轻声问。</p>
-<p>小黄的脸颊微微发热，梦境里的亲密让她一时不知如何开口。但小王似乎并不需要她的回答。他伸出手，轻轻碰了碰她的指尖，动作小心翼翼，却又无比笃定。</p>
-<p>他们相视一笑，没有多余的言语。或许，象征界的故事正是他们最真实的样子，那是灵魂深处最本真的记忆。</p>
-<p>而在这一刻，他们不需要华丽的告白，也不再羞于表达。小黄轻轻回握住他的手，无声的拥抱里，藏着比任何语言都更深的情感。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://215896271.github.io/2025/04/07/%E7%88%B1%E4%B8%8E%E8%B1%A1%E5%BE%81%E7%95%8C%E7%9A%84%E6%95%85%E4%BA%8B/" data-id="cm99fm8700000mwta7tjzckjv" data-title="爱与象征界的故事" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%AD%E7%AF%87/" rel="tag">中篇</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-阿黄的新邻居" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/03/07/%E9%98%BF%E9%BB%84%E7%9A%84%E6%96%B0%E9%82%BB%E5%B1%85/" class="article-date">
-  <time class="dt-published" datetime="2025-03-06T16:00:00.000Z" itemprop="datePublished">2025-03-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/03/07/%E9%98%BF%E9%BB%84%E7%9A%84%E6%96%B0%E9%82%BB%E5%B1%85/">阿黄的新邻居</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>阿黄搬了新家，她发现她的邻居很特别。</p>
-<p>她的这位邻居是一个机器人，目前它独自一个人住。</p>
-<p>阿黄很喜欢她的这位机器人邻居，于是主动上前跟它去交朋友。机器人想了想，觉得也没有拒绝的理由，所以两个人就成为了朋友。</p>
-<p>阿黄平时去上学，机器人独自待在家里干一些活，以赚取它的电费。</p>
-<p>阿黄很努力，很刻苦，而机器人则显得有些慵懒，因为它觉得只要维持电费和维修费的开销就够了，没有必要去赚取多余的钱。</p>
-<p>有一天阿黄在学校里遇到了一道数学上的难题，回来之后就去问机器人，机器人计算了一会就告诉了阿黄答案，阿黄很感谢机器人，而机器人却说：虽然解开这道数学题让我觉得很累，不过也算是帮助到了你，这算是有得也有失吧。</p>
-<p>但是有一天，阿黄在学校里遭遇了一些伤心事，回来之后就哇哇大哭。</p>
-<p>阿黄向机器人哭诉着，我遇到了一个坏孩子，我好心借给他橡皮，他却把橡皮抢走了，不还给我了。</p>
-<p>机器人耐心地听着，对阿黄说，这是很正常的事。虽然这个世上还是好人居多，但偶尔也会遇见那么一两个坏人。</p>
-<p>然后机器人接着说，对于这件事情，我没有办法提供帮助。但是如果你要问我建议的话，我可以告诉你，你可以去找你的老师，或者你可以直接买一个新的橡皮。</p>
-<p>我们也不知道到底阿黄有没有找回她的橡皮，总之就是这样。阿黄后续跟机器人一直做了好几年的邻居。</p>
-<p>阿黄如果去找机器人帮忙，机器人就在自己的能力范围内帮助她。如果无法提供帮助，就说明理由。</p>
-<p>而机器人基本上都独立生活，并不需要阿黄的帮助。不过有的时候机器人也会遇到意想不到的情况，比如有一次大雨天突然停电了，机器人只能去找阿黄借了几根电池，以维持它的运转。</p>
-<p>现在阿黄正在家里吃着她的美味的糕点，而机器人正在家里插在它的插头上。总之，大部分时候日子过得还是挺不错的。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://215896271.github.io/2025/03/07/%E9%98%BF%E9%BB%84%E7%9A%84%E6%96%B0%E9%82%BB%E5%B1%85/" data-id="cm99f1aw500000gta415cfthy" data-title="阿黄的新邻居" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%9F%AD%E7%AF%87/" rel="tag">短篇</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-短篇小说—阿黄的舞台" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/08/24/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E9%98%BF%E9%BB%84%E7%9A%84%E8%88%9E%E5%8F%B0/" class="article-date">
-  <time class="dt-published" datetime="2024-08-23T16:00:00.000Z" itemprop="datePublished">2024-08-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/24/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E9%98%BF%E9%BB%84%E7%9A%84%E8%88%9E%E5%8F%B0/">阿黄的舞台</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>宇宙的深处，古老而原始的深空中，充斥着亘古的寂静与黑暗。</p>
-<p>突然，一些微小的扰动出现，随之而来的是断断续续的光亮和声音。渐渐的，这些光亮和声音变得越来越强烈，最终汇聚成了一句清晰而响亮的话语：“要有一个舞台！”</p>
-<p>于是，舞台便出现了，它坐落在太空中，恒星是它的灯光。舞台之上有一个生命，它是原初的生命，一切生命的伊始。它带着一顶黄色的帽子，我们姑且称它为阿黄。一个声音问阿黄：“你明白这一切的意义所在吗？”阿黄回答说：“是的，我明白！”</p>
-<p>于是，阿黄开始舞蹈，它的身影穿过亿万光年，到达宇宙的各个角落。于是，阿黄开始歌唱，它的旋律跨越时间长河，直到宇宙尽头。一切的可能性，一切的意义皆显化于此。</p>
-<p>可是，它终究是抵不过时间洪流的侵蚀，在漫长的岁月中，它消散了形体，暗淡了光芒，最后在闪电和烈火之中化作了星星点点的尘埃云，飘散在宇宙的各处。</p>
-<p>然而，在那原始的海洋里，一切又在闪电和烈火中重生。它们仿佛一次又一次的新生与死去，仿佛又似一直在那里，从未消散过。</p>
-<p>现在，阿黄在草地上快乐地奔跑着，可是不小心跌了一跤，它变得有些不知所措。那个声音穿越了时空，又问道阿黄：“你明白这一切的意义所在吗？”这一次，阿黄停顿了一下，它显得有些伤感，但是也变得更为坚定地回答道：“是的，我明白！”随后阿黄又站了起来，继续向远方跑去。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://215896271.github.io/2024/08/24/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E9%98%BF%E9%BB%84%E7%9A%84%E8%88%9E%E5%8F%B0/" data-id="cm99faz02000188tafr2hciea" data-title="阿黄的舞台" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%A3%E6%96%87%E8%AF%97/" rel="tag">散文诗</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-短篇小说——鸟人" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/04/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E2%80%94%E9%B8%9F%E4%BA%BA/" class="article-date">
-  <time class="dt-published" datetime="2023-09-03T16:00:00.000Z" itemprop="datePublished">2023-09-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/04/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E2%80%94%E9%B8%9F%E4%BA%BA/">短篇小说——鸟人</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>事情发生在我高中毕业的时候，那个时候我一个人出去旅游，在普陀岛，白天看海，晚上住在海边的宾馆里。半夜快睡着的时候，透过窗户看到外面有彩色的光线。当时心血来潮，就爬起来出去看看。走进一看，才发现事情大大超出了我的想象。非要形容的话，是一只鸟人正在降落，它头上似乎有一盏灯，发出彩色的光芒，射向极远处。然后它停了下来，并向我打招呼：“你好”</p>
-<p>鸟人穿着雨披一样的衣服，上面系满了各色各样长短不一的绸带，在我看来这是极为滑稽的。我不知道鸟人为什么会讲人类的语言，也许它因为某些原因事先了解过甚至在人类社会生活过，但不管怎样，我感受到了来自它的善意，我也回答道：“你好”</p>
-<p>鸟人说道：“很高兴认识你，你可以称呼我鸟人。我似乎忘记了我的名字，我以前的经历似乎也全都忘掉了。不过，我现在是一个鸟人，也许有一天我会去尝试一些其他什么，不过我很喜欢现在这样，总之很高兴认识你”</p>
-<p>鸟人表现得出乎意料地热情，我向它回答道：“我也很高兴认识你，我觉得你头上戴的那个发出彩色光线的灯很好看，也很有趣”</p>
-<p>“啊，你是说彩虹灯吗，我很喜欢它！它是我的朋友送给我的，是给我的礼物。可是我好像不记得他的名字了”说到这里，鸟人停顿住了，语气似乎有些悲伤，我看到它流下了眼泪。但是很快，鸟人又恢复了笑容，“抱歉，也许是太高兴了说不定，我真的很喜欢这份礼物”</p>
-<p>当时我对鸟人戴的彩虹灯很好奇，于是我问它：“冒昧地问一下，不知道你有没有彩虹灯的说明书或者是使用手册之类的，如果有的话，我可以看一下吗”</p>
-<p>“我找找看哈”鸟人在它的背包里飞快地翻找起来，过了一会，它找出了一张写满字的纸，“好像是这个”。上面写到：核能式彩虹发生器，送给我的好朋友，储存的能量可以一直用到宇宙结束，然后下面是一堆密密麻麻的参数规格说明，以及结构示意图。鸟人说道“哈哈， 这个我看不懂，一看到密密麻麻的字就头疼”</p>
-<p>过了些许，鸟人与我道别，“再见了，我要去旅行了，总之很高兴见到你”。它挥动着翅膀，越飞越高，越飞越快，最后化为一颗流星，消失在天边。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://215896271.github.io/2023/09/04/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E2%80%94%E9%B8%9F%E4%BA%BA/" data-id="cm99fayzv000088tag9xp6v8n" data-title="短篇小说——鸟人" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%9F%AD%E7%AF%87/" rel="tag">短篇</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%AD%E7%AF%87/" rel="tag">中篇</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%A3%E6%96%87%E8%AF%97/" rel="tag">散文诗</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9F%AD%E7%AF%87/" rel="tag">短篇</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">四月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">三月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">八月 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">九月 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/04/07/%E7%88%B1%E4%B8%8E%E8%B1%A1%E5%BE%81%E7%95%8C%E7%9A%84%E6%95%85%E4%BA%8B/">爱与象征界的故事</a>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
           </li>
+          
         
-          <li>
-            <a href="/2025/03/07/%E9%98%BF%E9%BB%84%E7%9A%84%E6%96%B0%E9%82%BB%E5%B1%85/">阿黄的新邻居</a>
-          </li>
         
-          <li>
-            <a href="/2024/08/24/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E9%98%BF%E9%BB%84%E7%9A%84%E8%88%9E%E5%8F%B0/">阿黄的舞台</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/04/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E2%80%94%E9%B8%9F%E4%BA%BA/">短篇小说——鸟人</a>
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
     </div>
   </div>
+</nav>
 
   
-</aside>
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">分享给我自己和我的好友</span>
+          
+        </div>
+
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+
       
-      &copy; 2025 Tom<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
   </div>
-</footer>
+</div>
 
-    </div>
-    <nav id="mobile-nav">
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/07/%E7%88%B1%E4%B8%8E%E8%B1%A1%E5%BE%81%E7%95%8C%E7%9A%84%E6%95%85%E4%BA%8B/" target="_self">
+          爱与象征界的故事
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/07/%E7%88%B1%E4%B8%8E%E8%B1%A1%E5%BE%81%E7%95%8C%E7%9A%84%E6%95%85%E4%BA%8B/" target="_self">
+        <div>
+          序章  现实的微光夜色静谧，窗外的路灯在窗帘上投下细碎的光晕。小黄蜷缩在床头，手中的小说滑落在被单上，呼吸渐渐平稳。一旁的书桌上，小王的笔记本电脑泛着微光，他仍专注地盯着屏幕，指尖偶尔敲击键盘，处理着未完成的数据。 他们相识已有七年，从高中同桌到如今同住一个公寓。书架上，小黄的猫猫挂件和小王的专利证书并排放着。 小王揉了揉酸涩的眼睛，抬头时发现小黄已经睡着了。她的睫毛在台灯的光晕下投下浅浅的阴影，
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-07 00:00" pubdate>
+              2025-04-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
   
-    <a href="/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%B8%AD%E7%AF%87/" class="category-chain-item">中篇</a>
   
-</nav>
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/03/07/%E9%98%BF%E9%BB%84%E7%9A%84%E6%96%B0%E9%82%BB%E5%B1%85/" target="_self">
+          阿黄的新邻居
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/03/07/%E9%98%BF%E9%BB%84%E7%9A%84%E6%96%B0%E9%82%BB%E5%B1%85/" target="_self">
+        <div>
+          阿黄搬了新家，她发现她的邻居很特别。 她的这位邻居是一个机器人，目前它独自一个人住。 阿黄很喜欢她的这位机器人邻居，于是主动上前跟它去交朋友。机器人想了想，觉得也没有拒绝的理由，所以两个人就成为了朋友。 阿黄平时去上学，机器人独自待在家里干一些活，以赚取它的电费。 阿黄很努力，很刻苦，而机器人则显得有些慵懒，因为它觉得只要维持电费和维修费的开销就够了，没有必要去赚取多余的钱。 有一天阿黄在学校里遇
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-03-07 00:00" pubdate>
+              2025-03-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%9F%AD%E7%AF%87/" class="category-chain-item">短篇</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/08/24/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E9%98%BF%E9%BB%84%E7%9A%84%E8%88%9E%E5%8F%B0/" target="_self">
+          阿黄的舞台
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/08/24/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E9%98%BF%E9%BB%84%E7%9A%84%E8%88%9E%E5%8F%B0/" target="_self">
+        <div>
+          宇宙的深处，古老而原始的深空中，充斥着亘古的寂静与黑暗。 突然，一些微小的扰动出现，随之而来的是断断续续的光亮和声音。渐渐的，这些光亮和声音变得越来越强烈，最终汇聚成了一句清晰而响亮的话语：“要有一个舞台！” 于是，舞台便出现了，它坐落在太空中，恒星是它的灯光。舞台之上有一个生命，它是原初的生命，一切生命的伊始。它带着一顶黄色的帽子，我们姑且称它为阿黄。一个声音问阿黄：“你明白这一切的意义所在吗？
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-08-24 00:00" pubdate>
+              2024-08-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%A3%E6%96%87%E8%AF%97/" class="category-chain-item">散文诗</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/09/04/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E2%80%94%E9%B8%9F%E4%BA%BA/" target="_self">
+          短篇小说——鸟人
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/09/04/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E2%80%94%E2%80%94%E9%B8%9F%E4%BA%BA/" target="_self">
+        <div>
+          事情发生在我高中毕业的时候，那个时候我一个人出去旅游，在普陀岛，白天看海，晚上住在海边的宾馆里。半夜快睡着的时候，透过窗户看到外面有彩色的光线。当时心血来潮，就爬起来出去看看。走进一看，才发现事情大大超出了我的想象。非要形容的话，是一只鸟人正在降落，它头上似乎有一盏灯，发出彩色的光芒，射向极远处。然后它停了下来，并向我打招呼：“你好” 鸟人穿着雨披一样的衣服，上面系满了各色各样长短不一的绸带，在我
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-09-04 00:00" pubdate>
+              2023-09-04
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%9F%AD%E7%AF%87/" class="category-chain-item">短篇</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
 
-<script src="/js/script.js"></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-  </div>
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
